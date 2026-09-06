@@ -15,7 +15,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/bcochofel/homelab-proxmox-k3s.git
+    repoURL: https://github.com/BCochofelHomelab/homelab-proxmox-k3s.git
     targetRevision: main
     path: argocd/apps
     directory:

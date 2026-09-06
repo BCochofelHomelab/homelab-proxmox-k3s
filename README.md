@@ -19,11 +19,11 @@ This repo is one of three that make up the homelab:
   Jaeger/Prometheus/OpenSearch/Grafana stack of its own — so this cluster
   is part of the shared observability architecture, not a second, separate
   one. See [`docs/ARGOCD.md`](docs/ARGOCD.md) for the full rationale.
-- **[`homelab-proxmox-core`](https://github.com/bcochofel/homelab-proxmox-core)**
+- **[`homelab-proxmox-core`](https://github.com/BCochofelHomelab/homelab-proxmox-core)**
   — edge routing and name resolution: the Caddy reverse proxy and the
   CoreDNS + Pihole DNS pair every VM in the homelab (including this
   repo's) resolves against.
-- **[`homelab-proxmox-elastic`](https://github.com/bcochofel/homelab-proxmox-elastic)**
+- **[`homelab-proxmox-elastic`](https://github.com/BCochofelHomelab/homelab-proxmox-elastic)**
   — the Elastic observability stack (Elasticsearch, Kibana, Fleet Server,
   APM Server), built with the same Packer -> Terraform -> Ansible pipeline
   as this repo.
