@@ -121,10 +121,11 @@ manual version bumps.
 - `docs:`, `chore:`, `style:`, etc. -> no release by themselves
 
 On release, semantic-release ([`.releaserc.js`](.releaserc.js)) analyzes
-commits, generates release notes, updates
-[`CHANGELOG.md`](CHANGELOG.md), publishes a GitHub Release, and commits the
-changelog back with `[skip ci]`. `.github/workflows/release.yml` runs this
-automatically on push to `main`.
+commits and publishes a GitHub Release with the generated notes as its
+body — no `CHANGELOG.md` file, and no commit back to the branch.
+`.github/workflows/release.yml` runs this automatically on push to `main`,
+using the default `GITHUB_TOKEN` (no PAT, no branch-ruleset bypass needed,
+since nothing is pushed to `main`).
 
 ## Pull requests
 
