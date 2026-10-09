@@ -1,5 +1,11 @@
 # homelab-proxmox-k3s
 
+> [!IMPORTANT]
+> **Archived: superseded by
+> [`homelab-proxmox-workloads`](https://github.com/BCochofelHomelab/homelab-proxmox-workloads).**
+> The homelab's workloads now live there; K3s isn't part of it yet. This
+> repository is read-only and kept for reference, should K3s come back.
+
 Three VMs on Proxmox (pve1), built with an IaC pipeline into a K3s cluster,
 running the OpenTelemetry demo managed by ArgoCD.
 
